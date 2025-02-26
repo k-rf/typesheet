@@ -1,0 +1,51 @@
+{
+  "name": "template-typescript",
+  "version": "2.2.0",
+  "description": "The template of TypeScript.",
+  "author": "Kawano Kenichi <kenichi.k.820@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "prepare": "husky",
+    "typecheck": "tsc --project tsconfig.json --pretty --noEmit",
+    "lint": "biome lint --write",
+    "lint:legacy": "eslint --fix --cache",
+    "lint:all": "npm-run-all -s lint lint:legacy",
+    "format": "biome format --write",
+    "check:all": "npm-run-all -s format typecheck lint:all",
+    "test": "bun test",
+    "test:cov": "bun test --coverage",
+    "test:watch": "bun test --watch"
+  },
+  "dependencies": {
+    "@paralleldrive/cuid2": "^2.2.2",
+    "effect": "^3.13.2",
+    "ts-pattern": "^5.6.2",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.9.4",
+    "@cspell/eslint-plugin": "^8.17.5",
+    "@types/bun": "^1.2.4",
+    "@types/node": "^22.13.5",
+    "dotenv-cli": "^8.0.0",
+    "eslint": "^9.21.0",
+    "eslint-import-resolver-typescript": "^3.8.3",
+    "eslint-plugin-import-x": "^4.6.1",
+    "eslint-plugin-sonarjs": "^3.0.2",
+    "globals": "^16.0.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.4.3",
+    "npm-run-all": "^4.1.5",
+    "textlint": "^14.4.2",
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^5.7.3",
+    "typescript-eslint": "^8.25.0",
+    "vite": "^6.2.0",
+    "vite-tsconfig-paths": "^5.1.4"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}
