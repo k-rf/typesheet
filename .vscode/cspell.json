@@ -7,13 +7,13 @@
     "devcontainer",
     "esbuild",
     "Filenaming",
-    "gasts",
     "linebreak",
     "paralleldrive",
     "Parens",
     "sonarjs",
     "tada",
     "textlint",
-    "tseslint"
+    "tseslint",
+    "typesheet"
   ]
 }

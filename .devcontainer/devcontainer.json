@@ -1,10 +1,10 @@
 {
-  "name": "gasts",
-  "remoteUser": "gasts",
+  "name": "typesheet",
+  "remoteUser": "typesheet",
   "dockerComposeFile": "./compose.dev.yaml",
   "service": "app",
   "postCreateCommand": "bun install",
-  "workspaceFolder": "/workspaces/gasts",
+  "workspaceFolder": "/workspaces/typesheet",
   "overrideCommand": true,
   "shutdownAction": "none",
   "customizations": {
