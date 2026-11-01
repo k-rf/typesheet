@@ -22,7 +22,7 @@
     "@paralleldrive/cuid2": "^2.2.2",
     "effect": "^3.13.2",
     "ts-pattern": "^5.6.2",
-    "zod": "^3.24.2"
+    "zod": "^4.6.7"
   },
   "devDependencies": {
     "@biomejs/biome": "1.9.4",
